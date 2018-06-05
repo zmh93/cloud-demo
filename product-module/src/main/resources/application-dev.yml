@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    platform: h2
+    data: "classpath:product.sql"
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    root: warn
+    org:
+      hibernate: info

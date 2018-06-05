@@ -3,9 +3,6 @@
 .mvn/
 mvn*
 generatorConfig.xml
-application.yml
-application-dev.yml
-application-prod.yml
 
 ### STS ###
 .apt_generated
