@@ -1,6 +1,6 @@
-package com.example.productmodule.mapper;
+package com.example.common.mapper;
 
-import com.example.productmodule.entity.Product;
+import com.example.common.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

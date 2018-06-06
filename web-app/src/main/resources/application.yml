@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: web-app
+  profiles:
+    active: dev
 eureka:
   client:
     register-with-eureka: true

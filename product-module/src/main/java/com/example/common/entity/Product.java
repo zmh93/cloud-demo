@@ -1,4 +1,4 @@
-package com.example.productmodule.entity;
+package com.example.common.entity;
 
 import lombok.Data;
 

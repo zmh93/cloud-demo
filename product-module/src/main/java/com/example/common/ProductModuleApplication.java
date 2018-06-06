@@ -1,4 +1,4 @@
-package com.example.productmodule;
+package com.example.common;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-@EnableFeignClients("com.example.common")
+@EnableFeignClients("com.example.common.api")
 public class ProductModuleApplication {
 
     public static void main(String[] args) {

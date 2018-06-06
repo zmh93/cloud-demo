@@ -1,8 +1,8 @@
-package com.example.productmodule.service.impl;
+package com.example.common.service.impl;
 
 import com.example.common.api.product.RProductService;
-import com.example.productmodule.entity.Product;
-import com.example.productmodule.mapper.ProductMapper;
+import com.example.common.entity.Product;
+import com.example.common.mapper.ProductMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 
