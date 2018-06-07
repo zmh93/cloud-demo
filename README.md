@@ -7,7 +7,8 @@
 4. 项目使用了 jpa+h2，不需要本地的数据库配置，直接运行即可。
 5. 使用jpa的@Entity时，注意到除了id主键，其他字段顺序是根据字母正序排列
 > [jpa使用@Entity自动建表的字段顺序问题](https://blog.csdn.net/hkawei/article/details/71552691)
-6. 在需要被外部访问的 webapp模块引入了security进行权限控制
+6. 在需要被外部访问的 webapp模块引入了security进行权限控制,登陆后即可访问接口
+![登陆](login.png)
 7. 增加 customer顾客模块
 8. 单点登陆 OAUTH2与jwt
 ---
