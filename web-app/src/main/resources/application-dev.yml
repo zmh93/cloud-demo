@@ -9,10 +9,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-  security:
-    user:
-      name: admin
-      password: 123
 logging:
   level:
     root: warn

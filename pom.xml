@@ -16,7 +16,7 @@
         <module>product-module</module>
         <module>common</module>
         <module>web-app</module>
-        <module>user-module</module>
+        <module>customer-module</module>
     </modules>
 
 

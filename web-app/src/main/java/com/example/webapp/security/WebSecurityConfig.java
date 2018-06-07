@@ -17,10 +17,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private MyUserDetailService userDetailService;
 
-    //http://localhost:8080/login 输入正确的用户名密码 并且选中remember-me 则登陆成功，转到 index页面
-    //再次访问index页面无需登录直接访问  
-    //访问http://localhost:8080/home 不拦截，直接访问，  
-    //访问http://localhost:8080/hello 需要登录验证后，且具备 “ADMIN”权限hasAuthority("ADMIN")才可以访问  
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.headers().frameOptions().disable().and()//使用表单登录，不再使用默认httpBasic方式
@@ -53,13 +49,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        //指定密码加密所使用的加密器为passwordEncoder()
-        //需要将密码加密后写入数据库
-       /* auth.userDetailsService(userDetailService).passwordEncoder(passwordEncoder());
-        auth.eraseCredentials(false);*/
-
-//        auth.inMemoryAuthentication()
-//                .withUser("admin").password("123456").roles("USER");
         auth.userDetailsService(userDetailService);
     }
 

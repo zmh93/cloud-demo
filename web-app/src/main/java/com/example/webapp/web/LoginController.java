@@ -12,7 +12,7 @@ public class LoginController {
     public Object index()throws Exception {
         AjaxResult ajaxResult = new AjaxResult();
         ajaxResult.setStatus(AjaxResult.FAIL);
-        ajaxResult.setDesc("请到/login接口输入您的账号，密码");
+        ajaxResult.setDesc("请到/login接口使用POST发送您的账号，密码");
         return ajaxResult;
     }
 
