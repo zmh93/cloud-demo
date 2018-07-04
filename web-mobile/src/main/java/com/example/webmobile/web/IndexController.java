@@ -1,4 +1,4 @@
-package com.example.webapp.web;
+package com.example.webmobile.web;
 
 import com.example.common.api.customer.RCustomerService;
 import com.example.common.api.product.RProductService;
@@ -20,7 +20,7 @@ public class IndexController {
     @GetMapping("/getAllProduct")
     public Object getAllProduct() {
         HashMap<Object, Object> map = new HashMap<>();
-        map.put("app_data", productService.getAll());
+        map.put("mobile_data", productService.getAll());
         return map;
     }
 

@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    platform: h2
+    data: "classpath:data.sql"
+#    url: jdbc:mysql:///webapp?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#    username: root
+#    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    root: warn
+    org:
+      hibernate: info
+

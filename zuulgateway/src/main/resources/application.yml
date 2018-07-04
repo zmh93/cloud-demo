@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: zull-gateway
+  profiles:
+    active: dev
+
+server:
+  port: 7006
+zuul:
+  routes:
+    web-app:
+      path: /app/**
+      url: http://localhost:7003/
+    web-mobile:
+      path: /mobile/**
+      url: http://localhost:7005/
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+    fetch-registry: true
+    register-with-eureka: true

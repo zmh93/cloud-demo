@@ -16,7 +16,9 @@
         <module>product-module</module>
         <module>common</module>
         <module>web-app</module>
+        <module>web-mobile</module>
         <module>customer-module</module>
+        <module>zuulgateway</module>
     </modules>
 
 
