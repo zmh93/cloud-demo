@@ -1,7 +1,7 @@
 spring:
   datasource:
     platform: h2
-    data: "classpath:user.sql"
+    data: "classpath:data.sql"
   jpa:
     show-sql: true
     hibernate:

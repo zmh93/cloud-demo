@@ -8,7 +8,4 @@ public interface RCustomerService {
 
     @GetMapping("/allUser")
     Object getAll();
-
-    @GetMapping("/getLoginUser")
-    Object getLoginUser();
 }

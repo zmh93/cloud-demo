@@ -3,6 +3,9 @@ spring:
     name: zull-gateway
   profiles:
     active: dev
+  devtools:
+    livereload:
+      enabled: true
 
 server:
   port: 7006
@@ -14,6 +17,9 @@ zuul:
     web-mobile:
       path: /mobile/**
       url: http://localhost:7005/
+    user-module:
+      path: /user/**
+      url: http://localhost:7007/
 
 eureka:
   client:

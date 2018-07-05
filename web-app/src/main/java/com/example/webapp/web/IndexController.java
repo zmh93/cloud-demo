@@ -24,7 +24,7 @@ public class IndexController {
         return map;
     }
 
-    @GetMapping("/getAllUser")
+    @GetMapping("/getAllCustomer")
     public Object getAllUser(){
         return customerService.getAll();
     }
